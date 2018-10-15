@@ -213,38 +213,3 @@ with open("word_vector_model.pkl","rb") as wd_vec:
     vectors = pickle.load(wd_vec)
 
 
-# ## visualizing the model
-
-model = TSNE(n_components=2)
-np.set_printoptions(suppress=True)
-vectors = model.fit_transform(vectors) 
-
-normalizer = preprocessing.Normalizer()
-vectors = normalizer.fit_transform(vectors, 'l2')
-
-fig, ax = plt.subplots()
-# print(unique_words)
-for word in unique_words[500:650]:
-    ax.annotate(word, (vectors[word_to_id[word]][0],vectors[word_to_id[word]][1] ))
-plt.show()
-
-
-def euclidean_dist(vec1, vec2):
-    return np.sqrt(np.sum((vec1-vec2)**2))
-
-def find_closest(word_index, vectors):
-    min_dist = 10000 # to act like positive infinity
-    min_index = -1
-    query_vector = vectors[word_index]
-    for index, vector in enumerate(vectors):
-        if euclidean_dist(vector, query_vector) < min_dist and not np.array_equal(vector, query_vector):
-            min_dist = euclidean_dist(vector, query_vector)
-            min_index = index
-    return id_to_word[min_index]
-
-
-find_closest(word_to_id['relationship'],vectors)
-
-
-
-
