@@ -7,8 +7,11 @@ Wikipedia Dataset.
 ## Approach
 
 Using Skip-Gram approach keeping window size 2(how it is used is shown in creation of training data)
-Training samples are created as described below:
-Example:
+
+Training samples are created as described below
+
+Example
+
 "The quick brown fox jumps over the lazy dog."
 Here the training data will be in format:
 Input: The   Label: quick
