@@ -24,7 +24,7 @@ Here the training data will be in format-
    Label- the
 4) Input- quick                
    Label- brown
-5) Input- quick
+5) Input- quick                        
    Label- fox
    
 
