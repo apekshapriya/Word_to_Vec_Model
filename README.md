@@ -2,7 +2,7 @@
 To create Word2vec model(create embeddings for each word in the dataset taken)
 
 ## Dataset
-Taken the Wikipedia Dataset.
+Wikipedia Dataset.
 
 ## Approach
 
@@ -20,10 +20,10 @@ Example:
 
 Here, as we are using window size of 2 and 0 skip, for each word, we take its context words(ie two words before it and two words after it). Those neighbouring words are chosen as context words as they will be used frequently with the given word. Hence in a similar context. Those context words wil decide the vector prediction of the given middle word.
 
+ # Model Details:
+ 
+ The model architecture is a single layer neural network with input input vector feeded to input layer, a hidden layer  of 300 units with liniear activation function and an output layer with softmax function. The weights between the input and hidden layer is learnt while training and will be the required embedding vector for the corpus.
 
-# Word_to_Vec_Model
-Created a model that generates an embedding word vector using skip gram approach using wikipedia dataset.
+## Conclusion
 
-## Created 1-layer neural network model.
-The model uses skip gram approach(neighbour words(context words) are predicted given a current word).
-The weights between the input and hidden layer will be learnt while training and will be the required embedding vector for the given corpus.
+The implementation of this word2vec model from scratch helps in having a clear understanding of roots of natural language processing.
