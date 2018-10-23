@@ -13,7 +13,8 @@ Training samples are created as described below
 Example--
 
 "The quick brown fox jumps over the lazy dog."
-Here the training data will be in format:
+Here the training data will be in format-
+
 Input: The                  Label: quick
 Input: The                  Label: brown
 Input: quick                Label: the
