@@ -107,7 +107,7 @@ def create_hot_vector(batch):
 
 def get_batch(batch_no, data):
     """
-
+    get batch of data according to batch no
     :param batch_no:
     :param data:
     :return: batch of data
