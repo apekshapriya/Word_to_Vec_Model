@@ -26,7 +26,8 @@ Here the training data will be in format-
    Label- brown
 5) Input- quick
    Label- fox
-and similarly for other words...
+
+And similarly for other words...
 
 Here, as we are using window size of 2 and 0 skip, for each word, we take its context words(ie two words before it and two words after it). Those neighbouring words are chosen as context words as they will be used frequently with the given word. Hence in a similar context. Those context words wil decide the vector prediction of the given middle word.
 
