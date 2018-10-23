@@ -30,6 +30,10 @@ Here the training data will be in format-
 
 And similarly for other words...
 
+
+Creation of sample is shown in the given figure below
+![alt text](https://github.com/apekshapriya/Word_to_Vec_Model/blob/master/training_data.png)
+
 Here, as we are using window size of 2 and 0 skip, for each word, we take its context words(ie two words before it and two words after it). Those neighbouring words are chosen as context words as they will be used frequently with the given word. Hence in a similar context. Those context words wil decide the vector prediction of the given middle word.
 
  # Model Details:
