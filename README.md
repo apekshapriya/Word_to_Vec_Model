@@ -16,8 +16,11 @@ Suppose the source text taken is--
 
 Here the training data will be in format-
 
-Input- The                  Label- quick
-Input- The                  Label- brown
+1) Input- The                  
+   Label- quick
+2) Input- The                  
+   Label- brown
+3)
 Input- quick                Label- the
 Input- quick                Label- brown
 Input- quick                Label- fox
