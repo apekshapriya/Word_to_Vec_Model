@@ -40,6 +40,9 @@ Here, as we are using window size of 2 and 0 skip, for each word, we take its co
  
  The model architecture is a single layer neural network with input input vector feeded to input layer, a hidden layer  of 300 units with liniear activation function and an output layer with softmax function. The weights between the input and hidden layer is learnt while training and will be the required embedding vector for the corpus.
 
+The model architecture is shown below:
+![alt text](https://github.com/apekshapriya/Word_to_Vec_Model/blob/master/skip_gram_net_arch.png)
+
 ## Conclusion
 
 The implementation of this word2vec model from scratch helps in having a clear understanding of roots of natural language processing.
